@@ -29,3 +29,4 @@ There are several additional improvements that could be considered in the future
 * Deploy the application in a containerized environment
 * Improve logging for better observability and diagnostics
 * Perform load testing to verify the effectiveness of caching and throttling mechanisms
+* Move hardcoded default values in the code (e.g., TTL, maximum number of concurrent calls) to the configuration file
