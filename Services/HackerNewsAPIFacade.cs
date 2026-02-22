@@ -136,7 +136,7 @@ public sealed class HackerNewsAPI : IHackerNewsAPI
     {
         //LINQ as alternative implementation here
         if (!ct.IsCancellationRequested && item != null &&
-           onlyStoryType && string.Equals(item.Type, "story", StringComparison.OrdinalIgnoreCase))
+            (!onlyStoryType || string.Equals(item.Type, "story", StringComparison.OrdinalIgnoreCase)))
         {
             return new Models.BestStory
             (
