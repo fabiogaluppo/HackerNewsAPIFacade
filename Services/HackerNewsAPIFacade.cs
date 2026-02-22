@@ -46,7 +46,7 @@ public sealed class HackerNewsAPI : IHackerNewsAPI
                                     return CachedGetItemByIDAsync(id, ct);
                                 });
                 var results = await Task.WhenAll(tasks);
-                return FilterModels(results, ct);
+                return FilterModels(results, ct, sortByScoreDesc: true);
             }
             return Array.Empty<Models.BestStory>().AsReadOnly();
         }
