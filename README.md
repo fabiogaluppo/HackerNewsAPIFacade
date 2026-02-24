@@ -24,7 +24,7 @@ While the implementation aims to be concise, it could benefit from improved orga
 
 There are several additional improvements that could be considered in the future. The following list is not exhaustive but includes:
 * Add unit tests (including mocked dependencies)
-* Enhance the story retrieval logic to account for scenarios where the returned item type is not "story"
+* Enhance the stories retrieval logic to account for scenarios where the returned item type is not "story"
 * Profile the running application to identify performance bottlenecks
 * Configure additional ASP.NET Core services (e.g., Authentication, Authorization, Kestrel, etc.)
 * Deploy the application in a containerized environment
